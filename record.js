@@ -81,12 +81,12 @@ function resolveTarget(input) {
 	return `https://${input}`;
 }
 
-// "https://example.com/pricing" -> "example.com-pricing-scroll.mp4"
+// "https://example.com/pricing" -> "example-com-pricing-scroll.mp4"
 function defaultOutputName(url) {
 	const name = url.protocol === 'file:'
 		? path.basename(url.pathname, path.extname(url.pathname))
 		: `${url.host}${url.pathname}`;
-	const slug = name.replace(/[^a-z0-9.]+/gi, '-').replace(/^-+|-+$/g, '');
+	const slug = name.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '');
 	return `${slug || 'page'}-scroll.mp4`;
 }
 

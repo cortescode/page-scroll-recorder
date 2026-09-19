@@ -61,7 +61,7 @@ scroll-record <url> [options]
 ### Examples
 
 ```sh
-# Record a live site → example.com-scroll.mp4
+# Record a live site → example-com-scroll.mp4
 scroll-record example.com
 
 # Record your dev server, faster, to a chosen file
@@ -89,8 +89,8 @@ If you don't pass `-o`, the file is written to the current folder with a name ba
 
 | Input | Output file |
 | --- | --- |
-| `example.com` | `example.com-scroll.mp4` |
-| `https://example.com/pricing` | `example.com-pricing-scroll.mp4` |
+| `example.com` | `example-com-scroll.mp4` |
+| `https://example.com/pricing` | `example-com-pricing-scroll.mp4` |
 | `localhost:5173` | `localhost-5173-scroll.mp4` |
 | `./dist/index.html` | `index-scroll.mp4` |
 
